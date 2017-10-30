@@ -1,0 +1,27 @@
+{
+  "name": "get-telegram-user-id-by-username-bot",
+  "version": "1.0.0",
+  "description": "Get Telegram user's ID by username bot.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src",
+    "build": "npm run clean && ./node_modules/.bin/babel src --out-dir dist",
+    "clean": "./node_modules/.bin/rimraf ./dist",
+    "prepublish": "npm run build",
+    "test": "node index.js"
+  },
+  "repository": "https://github.com/frenchbread/get-telegram-user-id-by-username-bot.git",
+  "author": "Damir Mustafin <damir.mustafin@protonmail.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.10.0",
+    "rimraf": "^2.6.2",
+    "standard": "^10.0.3"
+  }
+}
